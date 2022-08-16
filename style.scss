@@ -18,7 +18,6 @@ body {
 h1 {
   font-family: "DM Serif Display", serif;
   font-size: 28px;
-  letter-spacing: 0.03em;
   color: white;
 }
 
@@ -31,14 +30,12 @@ h2 {
 h3 {
   font-family: "DM Serif Text", serif;
   font-size: 50px;
-  letter-spacing: 0.03em;
   color: grey;
 }
 
 h4 {
   font-family: "DM Serif Text", serif;
   font-size: 24px;
-  letter-spacing: 0.03em;
   color: grey;
 }
 
@@ -111,7 +108,6 @@ header {
   #input-title {
     font-family: "DM Serif Text", serif;
     font-size: 30px;
-    letter-spacing: 0.03em;
     text-transform: none;
     margin-bottom: 15px;
   }
@@ -163,7 +159,6 @@ header {
     color: #ed751b;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin: 0 16px;
   }
@@ -320,7 +315,7 @@ header {
   .emptySpace {
     width: 100%;
     min-height: 120px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: rgb(240, 239, 239);
     padding: 20px 12px;
   }
@@ -358,7 +353,6 @@ header {
     @include flexCenter();
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     background-color: white;
     color: grey;
@@ -487,6 +481,10 @@ header {
   .todo-section {
     padding: 30px 0;
 
+    form input {
+      font-size: 18px;
+    }
+
     .select {
       justify-content: flex-start;
       flex-wrap: wrap;
@@ -511,6 +509,11 @@ header {
       width: 100%;
       margin: 0px;
       padding-bottom: 40px;
+    }
+
+    .emptySpace {
+      border-radius: 5px;
+      padding: 20px 8px;
     }
   }
 
@@ -549,7 +552,7 @@ header {
 
   .body-container {
     width: 100%;
-    border: 10px solid #f9cbac;
+    border: none;
     margin: 0;
     padding: 30px;
   }
@@ -559,11 +562,15 @@ header {
   }
 
   .todo-input {
-    width: 180px;
+    width: 100%;
   }
 
   .todo-section {
-    padding: 40px 0;
+    padding: 30px 0;
+
+    form input {
+      font-size: 18px;
+    }
 
     .select {
       flex-wrap: wrap;
@@ -589,6 +596,12 @@ header {
       width: 100%;
       margin: 0px;
       padding-bottom: 40px;
+    }
+
+    .emptySpace {
+      min-height: 102px;
+      border-radius: 5px;
+      padding: 10px 4px;
     }
   }
 
