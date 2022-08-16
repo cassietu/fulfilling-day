@@ -1,0 +1,573 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #f7e3d5;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+h3 {
+  font-family: "DM Serif Text", serif;
+  font-size: 50px;
+  letter-spacing: 0.03em;
+  color: grey;
+}
+
+h4 {
+  font-family: "DM Serif Text", serif;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  color: grey;
+}
+
+/*Body Container*/
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: white;
+  border: 24px solid #f9cbac;
+  margin: auto;
+  margin-bottom: 85px;
+  padding: 100px;
+}
+
+/*Header*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ed751b;
+  margin-bottom: 85px;
+  padding: 22px 50px;
+}
+header .date-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #reset-button {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ed751b;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 40px;
+  padding: 8px 16px;
+}
+header #reset-button:hover {
+  background-color: #b9601b;
+  color: white;
+}
+header #reset-button:active {
+  background-color: #9a4a0d;
+}
+
+/*Today Section*/
+.today-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgb(201, 200, 200);
+  padding-bottom: 50px;
+}
+
+/*To Do Section*/
+.todo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgb(201, 200, 200);
+  margin: auto;
+  padding: 50px 0;
+}
+.todo-section #input-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  margin-bottom: 15px;
+}
+.todo-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.todo-section form input {
+  font-weight: 500;
+  font-size: 22px;
+  background: white;
+  border: 3px solid #ed751b;
+  border-radius: 10px;
+  padding: 10px;
+}
+.todo-section form button {
+  cursor: pointer;
+  font-size: 42px;
+  background: none;
+  color: #ed751b;
+  border: none;
+  border-radius: 0px;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+.todo-section form button:hover {
+  color: #b9601b;
+}
+.todo-section .input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-section .input-button {
+  cursor: pointer;
+  margin: 3px;
+}
+.todo-section .select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-section label {
+  color: #ed751b;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 16px;
+}
+.todo-section .radio-label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: grey;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+/*ToDo Items*/
+.todo-list {
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 18px;
+  background: white;
+  color: black;
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0;
+  transition: all 0.5s ease;
+}
+
+.todo-input {
+  width: 500px;
+}
+
+.todo-item {
+  padding-left: 5px;
+}
+
+.todo li {
+  list-style: none;
+  flex: 1;
+}
+
+.complete-btn {
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border: none;
+  border: 1px solid #ed751b;
+  font-size: 12px;
+  margin: 7px 10px;
+  padding: 3px 4px;
+}
+.complete-btn:hover {
+  background-color: white;
+  color: #ed751b;
+}
+
+.check-completed {
+  border: none;
+  background-color: rgb(187, 187, 187);
+}
+.check-completed:hover {
+  border: none;
+  background-color: rgb(187, 187, 187);
+  color: white;
+}
+
+.trash-btn {
+  cursor: pointer;
+  font-size: 16px;
+  background: white;
+  color: rgb(192, 190, 190);
+  border: none;
+  padding: 10px;
+}
+.trash-btn:hover {
+  color: rgb(125, 125, 125);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  width: 700px;
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin: 5px 0;
+}
+
+.fall {
+  opacity: 0;
+}
+
+.fadein {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 225ms;
+          animation-duration: 225ms;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeout {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+/*Planner Section*/
+.planner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  border-bottom: 1px solid rgb(201, 200, 200);
+  padding: 55px 0 15px 0;
+}
+.planner-section .quadrant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 350px;
+  margin: 15px;
+}
+.planner-section .planner-section-label {
+  font-family: "DM Serif Text", serif;
+  padding-bottom: 14px;
+}
+.planner-section .emptySpace {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 15px;
+  background-color: rgb(240, 239, 239);
+  padding: 20px 12px;
+}
+.planner-section .allday {
+  background-color: #faf1ea;
+}
+.planner-section .allday-title {
+  color: #ed751b;
+}
+
+/*Completed Section*/
+.completedToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.completedToggle .fa-minus {
+  display: flex;
+  color: #ed751b;
+  padding-right: 10px;
+}
+.completedToggle .fa-plus {
+  display: none;
+  color: #ed751b;
+  padding-right: 10px;
+}
+.completedToggle #completedToggle {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: white;
+  color: grey;
+  border: none;
+}
+.completedToggle #completedToggle:hover {
+  color: #ed751b;
+  transition: color 400ms ease;
+}
+
+/*Completed Section*/
+.completed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+/*Desktop------------------------------------------------------------*/
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .body-container {
+    padding: 75px;
+    border: 18px solid #f9cbac;
+  }
+  .planner-section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .planner-section .quadrant {
+    width: 42%;
+    padding-bottom: 40px;
+  }
+  .completed {
+    width: 85%;
+  }
+}
+/*Laptop------------------------------------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    margin-bottom: 55px;
+  }
+  .body-container {
+    padding: 50px;
+    border: 14px solid #f9cbac;
+  }
+  .todo-input {
+    width: 375px;
+  }
+  .todo-section .select {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+  .todo-section label {
+    margin: 0 20px;
+  }
+  .planner-section {
+    flex-direction: column;
+    padding: 40px 0 0px 0;
+  }
+  .planner-section .quadrant {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 40px;
+  }
+  .completed {
+    width: 85%;
+  }
+}
+/*iPad------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h3 {
+    font-size: 40px;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 22px 40px;
+  }
+  header .date-reset {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header #reset-button {
+    align-self: flex-end;
+    margin-left: 0;
+  }
+  .body-container {
+    width: 85%;
+    border: 10px solid #f9cbac;
+    padding: 30px;
+  }
+  .today-section {
+    padding-bottom: 50px;
+  }
+  .todo-input {
+    width: 260px;
+  }
+  .todo-section {
+    padding: 30px 0;
+  }
+  .todo-section .select {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 280px;
+  }
+  .todo-section label {
+    font-size: 14px;
+    margin: 0 12px;
+  }
+  .todo-section #input-title {
+    font-size: 26px;
+  }
+  .planner-section {
+    flex-direction: column;
+    padding: 40px 0 0px 0;
+  }
+  .planner-section .quadrant {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 40px;
+  }
+  .completed {
+    width: 85%;
+  }
+}
+/*iPhone------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding: 22px 20px;
+  }
+  header .date-reset {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header #reset-button {
+    align-self: flex-end;
+    margin-left: 0;
+    padding: 6px 10px;
+  }
+  .body-container {
+    width: 100%;
+    border: 10px solid #f9cbac;
+    margin: 0;
+    padding: 30px;
+  }
+  .today-section {
+    padding-bottom: 40px;
+  }
+  .todo-input {
+    width: 180px;
+  }
+  .todo-section {
+    padding: 40px 0;
+  }
+  .todo-section .select {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 250px;
+  }
+  .todo-section label {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+  .todo-section #input-title {
+    font-size: 24px;
+  }
+  .planner-section {
+    flex-direction: column;
+    padding: 40px 0 0px 0;
+  }
+  .planner-section .quadrant {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 40px;
+  }
+  .completed {
+    width: 85%;
+  }
+}/*# sourceMappingURL=style.css.map */
