@@ -44,7 +44,7 @@ h4 {
   border: 24px solid #f9cbac;
   margin: auto;
   margin-bottom: 85px;
-  padding: 100px;
+  padding: 100px 100px 70px 100px;
 }
 
 /*Header*/
@@ -393,6 +393,21 @@ header #reset-button:active {
   display: none;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  padding-bottom: 40px;
+}
+footer p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
 /*Desktop------------------------------------------------------------*/
 @media only screen and (min-width: 1025px) and (max-width: 1600px) {
   .body-container {
@@ -578,5 +593,9 @@ header #reset-button:active {
   }
   .completed {
     width: 85%;
+  }
+  footer {
+    padding: 45px 0;
+    background-color: white;
   }
 }/*# sourceMappingURL=style.css.map */
